@@ -93,8 +93,8 @@
 <!-- Scripts -->
 <script type="module">
     const chatEl = document.getElementById("chat");
-    //const ws = new WebSocket("ws://127.0.0.1:8000");
-    const ws = new WebSocket("ws://pw-exercise.herokuapp.com/");
+    const ws = new WebSocket("ws://127.0.0.1:8000");
+    //const ws = new WebSocket("ws://pw-exercise.herokuapp.com/");
     ws.onmessage = (message) => {
         const messages = JSON.parse(message.data);
         messages.forEach((val) => {
