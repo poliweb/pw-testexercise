@@ -1,0 +1,56 @@
+/* stayles for TestExercise */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.slider-container {
+    overflow: hidden;
+    background-color: pink;
+}
+.slider-track {
+    display: flex;
+    background-color: yellow;
+    transition: .2s;
+}
+.slider-item {
+    height: 300px;
+}
+
+.slider-item:nth-child(3n+1) {background-color: red;}
+.slider-item:nth-child(3n+2) {background-color: green;}
+.slider-item:nth-child(3n+3) {background-color: blue;}
+
+.slider-buttons {
+    display: flex;
+    place-content: center;
+    text-align: center;
+}
+
+.btn-prev, 
+.btn-next {
+    /* padding: 4px 8px;
+    border-radius: 0.25rem;
+    border-color: rgb(220 38 38);
+    border-width: 1px;
+    border-style: solid;
+    background-color: #c3c3c3;
+    cursor: pointer; */
+}
+
+/* CSS для Конвертёра валют */
+
+.course-item-value.top {
+    color: rgb(255, 51, 51);
+}
+
+.course-item-value.bottom {
+    color: rgb(19, 189, 61);
+}

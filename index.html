@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header + Nav -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="/" class="w-25 h-10 mb-4 md:mb-0">
+                <img src="/images/PolIWeb_Logo.svg" alt="" class="h-10">
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a href="/" class="mr-5 hover:text-gray-900">Слайдер</a>
+                <a href="/chat.html" class="mr-5 hover:text-gray-900">Чат</a>
+                <a href="/converter.html" class="mr-5 hover:text-gray-900">Конвертёр валюты</a>
+                <a href="/contact.html" class="mr-5 hover:text-gray-900">Контакты</a>
+            </nav>
+            <button
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">+7
+                701 721 1284
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- //Header + Nav -->
+    <!-- Слайдер  на vanilla javascript -->
+    <div class="container mx-auto px-5 py-24">
+        <div class="wrapper">
+            <h1 class="text-3xl font-bold text-orange-500 mb-8">Слайдер <span class="text-pink-500 uppercase">(Карусель)</span> на vanilla javascript </h1>
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1640408444/HadeBaner_hikeag.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_east,h_1000,w_1000/v1639997472/screnshot1_woginx.png" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_west,h_1000,w_1000/v1620189086/new_projelt/web_development8_mrdtlh.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1620189087/new_projelt/web_development_wlkqpn.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1620189087/new_projelt/web_development10_sh0i90.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1620189087/new_projelt/web_development9_vwlb9j.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1620189086/new_projelt/web_development4_pdrhbc.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1620189086/new_projelt/web_development7_prjmo4.webp" alt="">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://res.cloudinary.com/poliweb/image/upload/c_fill,g_center,h_1000,w_1000/v1620189086/new_projelt/web_development2_ltsphc.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons gap-x-4 p-5">
+                <button class="btn-prev bg-indigo-500 rounded-md px-8 py-4 disabled:opacity-50">Prev</button>
+                <button class="btn-next bg-indigo-500 rounded-md px-8 py-4  disabled:opacity-75">Next</button>
+            </div>
+        </div>
+    </div>
+    <!-- //Слайдер  на vanilla javascript -->
+<!-- Footer -->
+<footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a href="/" class="w-20 h-8 mb-4 md:mb-0">
+            <img src="/images/PolIWeb_Logo.svg" alt="" class="">
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022
+            GitHub —
+            <a href="https://github.com/poliweb" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                target="_blank">@PoliWeb</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+            </a>
+        </span>
+    </div>
+</footer>
+<!-- //Footer -->
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
