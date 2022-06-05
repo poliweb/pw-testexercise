@@ -94,7 +94,7 @@
 <script type="module">
     const chatEl = document.getElementById("chat");
     //const ws = new WebSocket("ws://127.0.0.1:8000");
-    const ws = new WebSocket("wss://pw-test.poliweb.su");
+    const ws = new WebSocket("ws://pw-test.poliweb.su");
     ws.onmessage = (message) => {
         const messages = JSON.parse(message.data);
         messages.forEach((val) => {
